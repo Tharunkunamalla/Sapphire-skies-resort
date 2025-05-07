@@ -3,6 +3,7 @@ import Hero from "../components/Hero.jsx";
 import FeaturedDestination from "../components/FeaturedDestination.jsx";
 import ExclusiveOffers from "../components/ExclusiveOffers";
 import Testimonial from "../components/Testimonial.jsx";
+import NewsLetter from "../components/NewsLetter.jsx";
 // import { useLocation } from "react-router-dom";
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
       <FeaturedDestination />
       <ExclusiveOffers />
       <Testimonial />
-      {/* <Newsletter /> */}
+      <NewsLetter />
       {/* <Footer /> */}
     </>
   );

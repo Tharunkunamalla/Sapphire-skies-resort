@@ -8,6 +8,7 @@ const StarRating = ({rating = 4}) => {
         .fill("")
         .map((_, index) => (
           <img
+            key={index} // ✅ key added here to fix the warning
             src={
               rating > index ? assets.starIconFilled : assets.starIconOutlined
             }

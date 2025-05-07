@@ -65,8 +65,8 @@ const Navbar = () => {
         <img
           src={assets.logo}
           alt="logo"
-          className={`h-7 md:h-16 lg:h-20 max-h-20 object-contain ${
-            isScrolled && "invert opacity-80"
+          className={`h-20 max-h-20 object-contain ${
+            isScrolled ? "invert opacity-80" : ""
           }`}
         />
       </Link>
@@ -146,7 +146,9 @@ const Navbar = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           src={assets.menuIcon}
           alt="menu"
-          className={`${isScrolled && "invert"} h-4`}
+          className={`${
+            isScrolled && "invert"
+          } h-4 cursor-pointer transition-all duration-500`}
         />
       </div>
 
