@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../components/Hero.jsx";
 import FeaturedDestination from "../components/FeaturedDestination.jsx";
 import ExclusiveOffers from "../components/ExclusiveOffers";
+import Testimonial from "../components/Testimonial.jsx";
 // import { useLocation } from "react-router-dom";
 const Home = () => {
   return (
@@ -9,6 +10,9 @@ const Home = () => {
       <Hero />
       <FeaturedDestination />
       <ExclusiveOffers />
+      <Testimonial />
+      {/* <Newsletter /> */}
+      {/* <Footer /> */}
     </>
   );
 };
