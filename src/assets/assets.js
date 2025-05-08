@@ -128,10 +128,9 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: "Sophia Lee",
+    name: "sydney sweeney",
     address: "Seoul, South Korea",
-    image:
-      "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200",
+    image: "https://i.ibb.co/VcGjXRKm/sydney-sweeney.jpg",
     rating: 5,
     review:
       "Amazing service! I always find the best luxury accommodations through QuickStay. Their recommendations never disappoint!",
@@ -176,8 +175,7 @@ export const userDummyData = {
   _id: "user_2unqyL4diJFP1E3pIBnasc7w8hP",
   username: "Great Stack",
   email: "user.greatstack@gmail.com",
-  image:
-    "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvdXBsb2FkZWQvaW1nXzJ2N2c5YVpSSEFVYVUxbmVYZ2JkSVVuWnFzWSJ9",
+  image: "https://i.ibb.co/ycvqN8w8/owner.webp", // Store the image URL as a string
   role: "hotelOwner",
   createdAt: "2025-03-25T09:29:16.367Z",
   updatedAt: "2025-04-10T06:34:48.719Z",
@@ -188,11 +186,11 @@ export const userDummyData = {
 // Hotel Dummy Data
 export const hotelDummyData = {
   _id: "67f76393197ac559e4089b72",
-  name: "Urbanza Suites",
+  name: "The Luxury Hotel",
   address: "Main Road  123 Street , 23 Colony",
   contact: "+0123456789",
   owner: userDummyData,
-  city: "New York",
+  city: "Cochin",
   createdAt: "2025-04-10T06:22:11.663Z",
   updatedAt: "2025-04-10T06:22:11.663Z",
   __v: 0,
