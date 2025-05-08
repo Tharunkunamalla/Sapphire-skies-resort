@@ -23,14 +23,14 @@ const Hero = () => {
         around the world. Start Your Journey today
       </p>
 
-      <form className="bg-white/20 text-white rounded-lg px-6 py-4 mt-8 flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto">
+      <form className="bg-white/20 text-white rounded-lg px-6 py-4 mt-8 flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto z-1">
         {/* Custom Destination Dropdown */}
         <div className="relative w-60">
           <div className="flex items-center gap-2">
             <img
               src={assets.calenderIcon}
               alt="calendar icon"
-              className="h-4 filter brightness-0 invert"
+              className="h-4 filter brightness-0 invert z-0"
             />
             <label
               htmlFor="destinationInput"

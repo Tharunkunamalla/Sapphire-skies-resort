@@ -6,12 +6,14 @@ import Footer from "./components/Footer.jsx";
 import AllRooms from "./pages/AllRooms.jsx";
 import RoomDetails from "./pages/RoomDetails.jsx";
 import MyBookings from "./pages/MyBookings.jsx";
-
+import HotelReg from "./components/HotelReg.jsx";
 const App = () => {
   const isOwnerPath = useLocation().pathname.includes("owner");
   return (
     <div>
       {!isOwnerPath && <Navbar />}
+      {false && <HotelReg />}
+      {/* make true and false to view the hotel registration form */}
       <div className="min-h-[70vh]">
         <Routes>
           <Route path="/" element={<Home />} />
