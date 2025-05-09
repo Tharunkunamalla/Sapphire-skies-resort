@@ -12,3 +12,24 @@
 .font-playfair {
   font-family: Playfair !important;
 }
+
+/* Scrollbar track */
+::-webkit-scrollbar {
+  width: 5px; /* or any size you prefer */
+}
+
+/* Scrollbar background */
+::-webkit-scrollbar-track {
+  background: #fffdfd; /* light grey */
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* dark grey */
+  border-radius: 10px;
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

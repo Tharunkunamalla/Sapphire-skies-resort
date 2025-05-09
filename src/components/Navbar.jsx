@@ -72,12 +72,12 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop Nav */}
-      <div className="hidden md:flex items-center gap-4 lg:gap-8">
+      <div className="hidden md:flex items-center gap-4 lg:gap-8 ">
         {navLinks.map((link, i) => (
           <Link
             key={i}
             to={link.path}
-            className={`group flex flex-col gap-0.5 ${
+            className={`group flex flex-col gap-0.5 text-lg lg:text-xl font-medium ${
               isScrolled ? "text-gray-700" : "text-white"
             }`}
           >
@@ -90,9 +90,9 @@ const Navbar = () => {
           </Link>
         ))}
         <button
-          className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${
-            isScrolled ? "text-black" : "text-white"
-          } transition-all`}
+          className={`px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all ${
+            isScrolled ? "text-black border-black" : "text-white border-white"
+          } border-[3px]`}
           onClick={() => navigate("/owner")}
         >
           Dashboard
@@ -106,10 +106,19 @@ const Navbar = () => {
           alt="search"
           className={`${
             isScrolled && "invert"
-          } h-7 transition-all duration-500`}
+          } h-10 md:h-15 transition-all duration-500 cursor-pointer`}
         />
         {user ? (
-          <UserButton>
+          <UserButton
+            appearance={{
+              elements: {
+                userButtonAvatarBox: {
+                  width: "2.5rem",
+                  height: "2.5rem",
+                },
+              },
+            }}
+          >
             <UserButton.MenuItems>
               <UserButton.Action
                 label="My Bookings"
@@ -173,7 +182,7 @@ const Navbar = () => {
 
         {user && (
           <button
-            className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all"
+            className="border px-4 py-1 text-sm font-dark rounded-full cursor-pointer transition-all"
             onClick={() => navigate("/owner")}
           >
             Dashboard

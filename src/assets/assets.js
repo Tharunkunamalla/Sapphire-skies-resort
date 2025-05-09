@@ -173,8 +173,8 @@ export const roomCommonData = [
 // User Dummy Data
 export const userDummyData = {
   _id: "user_2unqyL4diJFP1E3pIBnasc7w8hP",
-  username: "Great Stack",
-  email: "user.greatstack@gmail.com",
+  username: "Tharun",
+  email: "tharunkunamalla7@gmail.com",
   image: "https://i.ibb.co/ycvqN8w8/owner.webp", // Store the image URL as a string
   role: "hotelOwner",
   createdAt: "2025-03-25T09:29:16.367Z",
@@ -190,7 +190,7 @@ export const hotelDummyData = {
   address: "Main Road  123 Street , 23 Colony",
   contact: "+0123456789",
   owner: userDummyData,
-  city: "Cochin",
+  city: "Cochin-kerala india",
   createdAt: "2025-04-10T06:22:11.663Z",
   updatedAt: "2025-04-10T06:22:11.663Z",
   __v: 0,

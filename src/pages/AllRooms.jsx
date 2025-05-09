@@ -97,7 +97,9 @@ const AllRooms = () => {
               <div className="flex flex-col justify-between flex-grow">
                 <div className="flex flex-col gap-1">
                   <p className="text-gray-500">
-                    {room.hotel.city}, {room.hotel.state}, {room.hotel.country}
+                    {room.hotel.city}
+                    {room.hotel.state}
+                    {room.hotel.country}
                   </p>
                   <p
                     className="text-xl font-playfair text-gray-800 cursor-pointer"
