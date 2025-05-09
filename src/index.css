@@ -6,6 +6,12 @@
   --color-primary: #2563eb;
   --color-secondary: #fbbf24;
 }
+/* In your global CSS or parent layout */
+main {
+  min-height: 100vh;
+  padding-bottom: 100px; /* enough space to clear the footer */
+}
+
 * {
   font-family: "Outfit";
 }

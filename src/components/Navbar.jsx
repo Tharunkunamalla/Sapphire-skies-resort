@@ -34,7 +34,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const {openSignIn} = useClerk();
-  const {user} = useUser(); // Corrected usage of useUser hook
+  const {user} = useUser();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -47,7 +47,7 @@ const Navbar = () => {
       }
     };
 
-    updateScrollState(); // Run on mount and route change
+    updateScrollState();
     window.addEventListener("scroll", updateScrollState);
     return () => window.removeEventListener("scroll", updateScrollState);
   }, [location.pathname]);
@@ -138,10 +138,18 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Button */}
-
       <div className="flex items-center gap-3 md:hidden">
         {user && (
-          <UserButton>
+          <UserButton
+            appearance={{
+              elements: {
+                userButtonAvatarBox: {
+                  width: "2rem",
+                  height: "2rem",
+                },
+              },
+            }}
+          >
             <UserButton.MenuItems>
               <UserButton.Action
                 label="My Bookings"
@@ -163,7 +171,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-white text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-gray-800 transition-all duration-500 ${
+        className={`fixed top-0 left-0 w-full h-screen bg-black/90 text-white flex flex-col md:hidden items-center justify-center gap-6 font-medium transition-all duration-500 ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -171,19 +179,31 @@ const Navbar = () => {
           className="absolute top-4 right-4"
           onClick={() => setIsMenuOpen(false)}
         >
-          <img src={assets.closeIcon} alt="close-menu" className="h-6.5" />
+          <img
+            src={assets.closeIcon}
+            alt="close-menu"
+            className="h-6.5 invert"
+          />
         </button>
 
         {navLinks.map((link, i) => (
-          <Link key={i} to={link.path} onClick={() => setIsMenuOpen(false)}>
+          <Link
+            key={i}
+            to={link.path}
+            onClick={() => setIsMenuOpen(false)}
+            className="text-lg px-4 py-2 rounded-md hover:bg-gray-200 hover:text-black transition-all duration-300"
+          >
             {link.name}
           </Link>
         ))}
 
         {user && (
           <button
-            className="border px-4 py-1 text-sm font-dark rounded-full cursor-pointer transition-all"
-            onClick={() => navigate("/owner")}
+            className="text-lg border px-6 py-2 border-white rounded-full transition-all duration-300 hover:bg-gray-300 hover:text-black"
+            onClick={() => {
+              setIsMenuOpen(false);
+              navigate("/owner");
+            }}
           >
             Dashboard
           </button>
@@ -192,7 +212,7 @@ const Navbar = () => {
         {!user && (
           <button
             onClick={openSignIn}
-            className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500"
+            className="text-lg bg-white text-black px-8 py-3 rounded-full transition-all duration-300 hover:bg-gray-200"
           >
             Login
           </button>

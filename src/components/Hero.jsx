@@ -115,7 +115,7 @@ const Hero = () => {
             Guests
           </label>
           <input
-            min={1}
+            min={0}
             max={4}
             id="guests"
             type="number"
