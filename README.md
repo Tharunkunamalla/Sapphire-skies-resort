@@ -19,3 +19,4 @@ If you are developing a production application, we recommend using TypeScript wi
 <img src="src/assets/r5.png" alt='5'>
 <img src="src/assets/r6.png" alt='6'>
 <img src="src/assets/r7.png" alt='7'>
+<h2>and many more.....</h2>
