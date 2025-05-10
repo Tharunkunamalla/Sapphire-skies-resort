@@ -10,3 +10,12 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+<h1>Outputs: </h1>
+<img src="src/assets/r1.png" alt='1'>
+<img src="src/assets/r2.png" alt='2'>
+<img src="src/assets/r3.png" alt='3'>
+<img src="src/assets/r4.png" alt='4'>
+<img src="src/assets/r5.png" alt='5'>
+<img src="src/assets/r6.png" alt='6'>
+<img src="src/assets/r7.png" alt='7'>
