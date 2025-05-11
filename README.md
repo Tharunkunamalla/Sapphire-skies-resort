@@ -10,7 +10,11 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-<h2>Hii, this is my new project.... which is A complete Mern stack website made with react jsx. You can get the loggin option by clerk from this website for user Authentication... <a style="text-decoration =none" href="https://clerk.com/">Clerk</a>.... 
+<br>
+Hii, This is my new project.... which is A complete Mern stack website made with react jsx. You can get the loggin option by clerk from this website for user Authentication... <h2><a style="text-decoration =none" href="https://clerk.com/">Clerk</a></h2>
+<p>
+  
+</p>
 <h1>Outputs: </h1>
 <img src="src/assets/r1.png" alt='1'>
 <img src="src/assets/r2.png" alt='2'>
