@@ -15,7 +15,7 @@ If you are developing a production application, we recommend using TypeScript wi
 <p>
   Access All images and information from assets.js in assets folder
   <br/>
-  You can acess your "VITE_CLERK_PUBLISHABLE_KEY" from clerk app
+  You can acess your "VITE_CLERK_PUBLISHABLE_KEY" from clerk app and edit that in env file..
 </p>
 <h1>Outputs: </h1>
 <img src="src/assets/r1.png" alt='1'>
