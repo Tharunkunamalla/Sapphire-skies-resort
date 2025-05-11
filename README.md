@@ -13,7 +13,9 @@ If you are developing a production application, we recommend using TypeScript wi
 <br/>
 <p>Hii, This is my new project.... which is A complete Mern stack website made with react jsx. You can get the loggin option by clerk from this website for user Authentication... <h2><a style="text-decoration =none" href="https://clerk.com/">Clerk</a></h2></p>
 <p>
-  
+  Access All images and information from assets.js in assets folder
+  <br/>
+  You can acess your   <h2>VITE_CLERK_PUBLISHABLE_KEY</h2> from clerk app
 </p>
 <h1>Outputs: </h1>
 <img src="src/assets/r1.png" alt='1'>
