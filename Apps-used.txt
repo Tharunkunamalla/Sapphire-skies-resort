@@ -1,0 +1,4 @@
+Apps Used :
+    Prebuilt Ui for Nav-bar, Forms, Footer, testmonial...
+    Clerk--> For User Authentication
+    
