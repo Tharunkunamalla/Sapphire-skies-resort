@@ -33,7 +33,7 @@ A modern, full-stack hotel management and booking platform built with React and 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
+- Node.js (v18 or higher recommended)
 - npm or yarn package manager
 - Clerk account for authentication
 
