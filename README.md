@@ -26,9 +26,11 @@ A modern, full-stack hotel management and booking platform built with React and 
 - **Frontend Framework**: React 19.1.0
 - **Build Tool**: Vite 6.3.5
 - **Routing**: React Router DOM 7.5.3
-- **Authentication**: Clerk (@clerk/nextjs 6.19.0)
+- **Authentication**: Clerk (@clerk/nextjs 6.19.0)*
 - **Styling**: Tailwind CSS 3.4.17
 - **Language**: JavaScript (JSX)
+
+*Note: This project uses @clerk/nextjs package for authentication.
 
 ## 🚀 Getting Started
 
