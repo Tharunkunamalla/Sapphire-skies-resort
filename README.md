@@ -97,6 +97,7 @@ Visit [Clerk.com](https://clerk.com/) to learn more about the authentication ser
 - **Room Details**: Detailed view of individual rooms with booking options
 - **My Bookings**: Personal booking history and management
 - **Owner Dashboard**: Hotel owner interface for managing rooms and viewing analytics
+
 ## 📸 Screenshots
 
 <img src="src/assets/r1.png" alt="Home Page - Hero Section">
